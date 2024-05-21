@@ -4,8 +4,24 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
 	public static void main(String[] args) {
-		selecaoCandidatos();
+		imprimirSelecionados();
 	}
+        
+        static void imprimirSelecionados() {
+            String [] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO"};
+            
+            System.out.println("Imprimindo a lista de Candidatos e informando o indice do elemento ");
+            
+            for(int indice=0; indice < candidatos.length; indice++){
+            System.out.println("O Candidato de n " + (indice+1) + " é o " + candidatos[indice]);
+            }
+            
+             System.out.println("Forma de abreviação chamada for earch");
+            
+            for(String candidato: candidatos){
+                 System.out.println("O Candidato selecionado foi " + candidato);
+            }
+        }
 	
 	static void selecaoCandidatos() {
 		String [] candidatos = {"FELIPE", "MARCIA", "JULIA", "PAULO", "AUGUSTO", "MONICA", "MIRELA", "FABRICIO", "MIRELA", "DANIELA", "JORGE"};
